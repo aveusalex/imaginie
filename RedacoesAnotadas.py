@@ -53,16 +53,16 @@ def realoc_redacoes(dir_redacoes: str, dir_csv: str) -> None:
             if redacao == nome_red and "," not in rotulo:
                 try:
                     # se for windows, trocar a / por \\
-                    shutil.copyfile(dir_redacoes + f"/{redacao}", dir_redacoes + f"/{rotulo}/{redacao}")
-                    remove(dir_redacoes + f"/{redacao}")
+                    shutil.copyfile(dir_redacoes + f"\\{redacao}", dir_redacoes + f"\\{rotulo}\\{redacao}")
+                    remove(dir_redacoes + f"\\{redacao}")
 
                 except:
-                    mkdir(dir_redacoes + f"/{rotulo}")
-                    shutil.copyfile(dir_redacoes + f"/{redacao}", dir_redacoes + f"/{rotulo}/{redacao}")
-                    remove(dir_redacoes + f"/{redacao}")
+                    mkdir(dir_redacoes + f"\\{rotulo}")
+                    shutil.copyfile(dir_redacoes + f"\\{redacao}", dir_redacoes + f"\\{rotulo}\\{redacao}")
+                    remove(dir_redacoes + f"\\{redacao}")
                     
                 break
 
 
 if __name__ == '__main__':
-    realoc_redacoes("/Users/alexecheverria/Downloads/luizf", "arquivos/luisf.csv")
+    realoc_redacoes("C:\\Users\\ALEXPC\\Downloads\\luizg", "arquivos\\luizg.csv")
