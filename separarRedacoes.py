@@ -28,4 +28,5 @@ def separa_redacoes(dir_orig: str, dir_tgt: str, qtd_red: int, divisoes: int = 1
 if __name__ == '__main__':
     diretorio_original = "/Users/alexecheverria/Downloads/essays"
     diretorio_target = "/Users/alexecheverria/Downloads"
-    separa_redacoes(diretorio_original, diretorio_target, 2000, 3, 4)
+    # Diretorio das redações + dir destino + qtd de redações por pasta + qtd de pastas + qtd de subdivisoes das pastas
+    separa_redacoes(diretorio_original, diretorio_target, 20000, 5, 10)

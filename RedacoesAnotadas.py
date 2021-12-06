@@ -60,7 +60,6 @@ def realoc_redacoes(dir_redacoes: str, dir_csv: str) -> None:
                     mkdir(dir_redacoes + f"/{rotulo}")
                     shutil.copyfile(dir_redacoes + f"/{redacao}", dir_redacoes + f"/{rotulo}/{redacao}")
                     remove(dir_redacoes + f"/{redacao}")
-                    
                 break
 
 
