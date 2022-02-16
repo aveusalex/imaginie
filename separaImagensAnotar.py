@@ -26,7 +26,7 @@ def copia_redacoes(dir_orig: str, dir_tgt: str, dir_lista_red: str, nome_pasta: 
 if __name__ == '__main__':
     diretorio_original = "/Users/alexecheverria/Downloads/5"
     diretorio_target = "/Users/alexecheverria/Downloads"
-    dir_nome_redacoes = "/Users/alexecheverria/Downloads/grupo2.txt"
-    nome_pasta = "grupo2"
+    dir_nome_redacoes = "/Users/alexecheverria/Downloads/LUIZG.txt"
+    nome_pasta = "luizgbranco"
     # Diretorio das redações + dir destino + qtd de redações por pasta + qtd de pastas + qtd de subdivisoes das pastas
     copia_redacoes(diretorio_original, diretorio_target, dir_nome_redacoes, nome_pasta)
